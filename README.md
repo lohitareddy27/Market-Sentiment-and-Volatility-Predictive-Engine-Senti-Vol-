@@ -223,9 +223,7 @@ absolute-bloom-477511-k3.senti_vol_stage
 ## 👨‍💻 Author
 
 **Mary Lohita Swarup Reddy Gade**
-B.Tech CSE (Data Science) – SRM IST KTR
 
 
----
 
-## ⭐ If this project helps you, give it a star on GitHub!
+
