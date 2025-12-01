@@ -1,10 +1,10 @@
-# 🧠 Market Sentiment & Volatility Predictive Engine (Senti-Vol)
+# Market Sentiment & Volatility Predictive Engine (Senti-Vol)
 
 An AI-powered data ingestion and preprocessing engine that collects financial news, market sentiment, social media activity, macroeconomic indicators, and futures price data to build the foundation for **short-term volatility prediction** for CME-traded assets such as WTI Crude Oil.
 
 ---
 
-## 🚀 Features
+## Features
 
 * **Automated Data Ingestion:** Pulls hourly & daily data from NewsAPI, Yahoo Finance, Reddit, YouTube, Finnhub, and FRED.
 * **Cloud-Native Architecture:** Works entirely on Google Cloud using Cloud Run Jobs + Cloud Scheduler.
@@ -16,7 +16,7 @@ An AI-powered data ingestion and preprocessing engine that collects financial ne
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Languages
 
@@ -34,7 +34,7 @@ An AI-powered data ingestion and preprocessing engine that collects financial ne
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 senti-vol/
@@ -53,22 +53,22 @@ senti-vol/
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
-### 1️⃣ Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/YourUserName/senti-vol.git
 cd senti-vol
 ```
 
-### 2️⃣ Install dependencies
+### Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Authenticate with Google Cloud
+### Authenticate with Google Cloud
 
 ```bash
 gcloud auth login
@@ -77,7 +77,7 @@ gcloud config set project absolute-bloom-477511-k3
 
 ---
 
-## 🐳 Docker Deployment
+## Docker Deployment
 
 ### Enable Required APIs
 
@@ -101,37 +101,7 @@ gcloud builds submit \
   --tag us-central1-docker.pkg.dev/absolute-bloom-477511-k3/containers/senti-vol:latest
 ```
 
----
-
-## 🔐 Secrets Configuration
-
-### Store API Keys in Secret Manager
-
-```bash
-"YOUR_NEWSAPI_KEY"     | Out-File -Encoding ascii -NoNewline tmp_news.txt
-"YOUR_YOUTUBE_API_KEY" | Out-File -Encoding ascii -NoNewline tmp_yt.txt
-"YOUR_FRED_API_KEY"    | Out-File -Encoding ascii -NoNewline tmp_fred.txt
-"YOUR_FINNHUB_API_KEY" | Out-File -Encoding ascii -NoNewline tmp_finn.txt
-```
-
-Upload them:
-
-```bash
-gcloud secrets create NEWSAPI_KEY     --data-file=tmp_news.txt
-gcloud secrets create YOUTUBE_API_KEY --data-file=tmp_yt.txt
-gcloud secrets create FRED_API_KEY    --data-file=tmp_fred.txt
-gcloud secrets create FINNHUB_API_KEY --data-file=tmp_finn.txt
-```
-
-Cleanup:
-
-```bash
-Remove-Item tmp_news.txt,tmp_yt.txt,tmp_fred.txt,tmp_finn.txt
-```
-
----
-
-## 🧩 Cloud Run Jobs Setup
+## Cloud Run Jobs Setup
 
 ### Example — NewsAPI Job (Hourly)
 
@@ -157,7 +127,7 @@ gcloud run jobs create senti-vol-news \
 
 ---
 
-## ⏰ Cloud Scheduler Triggers
+## Cloud Scheduler Triggers
 
 ### Example — Run News Every Hour
 
@@ -172,7 +142,7 @@ gcloud scheduler jobs create http senti-vol-news-hourly \
 
 ---
 
-## 📊 BigQuery Outputs
+## BigQuery Outputs
 
 Tables stored under:
 
@@ -190,28 +160,15 @@ absolute-bloom-477511-k3.senti_vol_stage
 
 ---
 
-## 💡 Core Concepts
 
-* Sentiment extraction from public sources
-* Macro indicators influencing volatility
-* Automated serverless cloud ingestion
-* ML-ready structured dataset
-
----
-
-## 🏁 Results Summary (Phase-1)
+## Results Summary 
 
 * Fully automated data ingestion
 * Hourly & daily scheduled jobs
 * Dockerized & cloud-native
-* Secure key management
 * BigQuery as unified data warehouse
 
----
 
-## 👨‍💻 Author
-
-**Mary Lohita Swarup Reddy Gade**
 
 
 
