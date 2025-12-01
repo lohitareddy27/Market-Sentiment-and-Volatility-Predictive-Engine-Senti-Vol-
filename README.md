@@ -21,7 +21,7 @@ An AI-powered data ingestion and preprocessing engine that collects financial ne
 ### Languages
 
 * Python 3.11+
-* Bash
+
 
 ### Cloud Services
 
@@ -31,16 +31,6 @@ An AI-powered data ingestion and preprocessing engine that collects financial ne
 * Secret Manager
 * Artifact Registry
 
-### Python Libraries
-
-* `requests`
-* `pandas`
-* `praw`
-* `feedparser`
-* `yfinance`
-* `google-cloud-bigquery`
-* `tqdm`
-* `logging`
 
 ---
 
