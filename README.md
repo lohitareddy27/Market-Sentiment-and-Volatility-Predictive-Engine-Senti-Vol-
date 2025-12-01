@@ -46,7 +46,6 @@ senti-vol/
 ├── youtube_ingest.py           # YouTube comments & metadata
 ├── fred_ingest.py              # Macroeconomic indicators (CPI, jobs, interest rates)
 ├── market_ingest.py            # OHLCV price ingestion via Yahoo Finance
-├── main.py                     # Entry point used by Cloud Run Jobs
 ├── Dockerfile                  # Container definition
 ├── requirements.txt            # Python dependencies
 └── README.md
