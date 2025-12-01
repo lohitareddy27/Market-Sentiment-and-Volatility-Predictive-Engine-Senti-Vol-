@@ -212,11 +212,11 @@ absolute-bloom-477511-k3.senti_vol_stage
 
 ## 🏁 Results Summary (Phase-1)
 
-* ✔ Fully automated data ingestion
-* ✔ Hourly & daily scheduled jobs
-* ✔ Dockerized & cloud-native
-* ✔ Secure key management
-* ✔ BigQuery as unified data warehouse
+* Fully automated data ingestion
+* Hourly & daily scheduled jobs
+* Dockerized & cloud-native
+* Secure key management
+* BigQuery as unified data warehouse
 
 ---
 
