@@ -1,4 +1,3 @@
-#common.py
 import os
 import json
 import hashlib
@@ -331,3 +330,4 @@ def upsert_to_bq(target_table: str, df: pd.DataFrame, schema=None, key_fields=No
         print(f"[upsert_to_bq] MERGE failed for target {target_table}: {e}\nSQL:\n{merge_sql}")
         raise
     print(f"[upsert_to_bq] MERGE complete: job_id={merge_job.job_id}")
+
