@@ -4,18 +4,6 @@ An AI-powered data ingestion and preprocessing engine that collects financial ne
 
 ---
 
-## Features
-
-* **Automated Data Ingestion:** Pulls hourly & daily data from NewsAPI, Yahoo Finance, Reddit, YouTube, Finnhub, and FRED.
-* **Cloud-Native Architecture:** Works entirely on Google Cloud using Cloud Run Jobs + Cloud Scheduler.
-* **Fully Containerized:** Python-based ingestion pipeline packaged as a portable Docker image.
-* **Secure Credential Handling:** API keys stored in Google Secret Manager.
-* **Scalable BigQuery Warehouse:** Clean dataset tables stored in `senti_vol_stage`.
-* **Modular Design:** Each ingestion source is a separate Python script for easy extension.
-* **ML-Ready Output:** Clean structured data for future sentiment modelling and volatility forecasting.
-
----
-
 ## Tech Stack
 
 ### Languages
@@ -78,12 +66,6 @@ gcloud config set project absolute-bloom-477511-k3
 ---
 
 ## Docker Deployment
-
-### Enable Required APIs
-
-```bash
-gcloud services enable artifactregistry.googleapis.com run.googleapis.com cloudbuild.googleapis.com cloudscheduler.googleapis.com secretmanager.googleapis.com
-```
 
 ### Create Artifact Registry
 
