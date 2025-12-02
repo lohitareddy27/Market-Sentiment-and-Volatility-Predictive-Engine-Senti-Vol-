@@ -1,6 +1,6 @@
 # Market Sentiment & Volatility Predictive Engine (Senti-Vol)
 
-An AI-powered data ingestion and preprocessing engine that collects financial news, market sentiment, social media activity, macroeconomic indicators, and futures price data to build the foundation for **short-term volatility prediction** for CME-traded assets such as WTI Crude Oil.
+An automated data ingestion method that collects financial news, market sentiment, social media activity, macroeconomic indicators, and futures price data to build the foundation for **short-term volatility prediction** for CME-traded assets such as WTI Crude Oil.
 
 ---
 
