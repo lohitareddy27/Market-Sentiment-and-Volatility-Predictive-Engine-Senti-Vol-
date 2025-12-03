@@ -13,7 +13,7 @@ YAHOO_FEED_URL = "https://feeds.finance.yahoo.com/rss/2.0/headline?s=CL=F&region
 
 
 CORE_RE = re.compile(
-    r"\b(wti|brent|crude oil|crude|petroleum|oil|opec\+?|eia|nyme?x|ice(?: brent)?|barrel?s?|refiner(?:y|ies)|upstream|midstream|downstream)\b",
+    r"\b(wti|brent|crude oil|crude|petroleum|opec\+?|eia|nyme?x|ice(?: brent)?|barrel?s?|refiner(?:y|ies)|upstream|midstream|downstream)\b",
     re.I,
 )
 CTX_RE = re.compile(
@@ -113,4 +113,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
