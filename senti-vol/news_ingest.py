@@ -25,7 +25,7 @@ SLEEP_BETWEEN_PAGES = 0.5
 SLEEP_ON_RETRY = 1.5       
 
 CORE_RE = re.compile(
-    r"\b(wti|brent|crude oil|crude|petroleum|opec\+?|eia|nyme?x|ice(?: brent)?|barrel?s?|refiner(?:y|ies)|upstream|midstream|downstream)\b",
+    r"\b(wti|brent|crude oil|crude|petroleum|oil|opec\+?|eia|nyme?x|ice(?: brent)?|barrel?s?|refiner(?:y|ies)|upstream|midstream|downstream)\b",
     re.I,
 )
 CTX_RE = re.compile(
@@ -298,3 +298,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
