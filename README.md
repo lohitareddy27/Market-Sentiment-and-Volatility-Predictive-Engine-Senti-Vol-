@@ -26,15 +26,16 @@ An automated data ingestion method that collects financial news, market sentimen
 
 ```
 senti-vol/
-├── common.py                   # Shared helpers (BQ loading, env handling)
-├── news_ingest.py              # NewsAPI ingestion
-├── yahoonews_ingest.py         # Yahoo Finance RSS ingestion
-├── reddit_ingest.py            # Reddit sentiment ingestion
-├── youtube_ingest.py           # YouTube comments & metadata
-├── fred_ingest.py              # Macroeconomic indicators (CPI, jobs, interest rates)
-├── market_ingest.py            # OHLCV price ingestion via Yahoo Finance
-├── Dockerfile                  # Container definition
-├── requirements.txt            # Python dependencies
+├── common.py                   
+├── news_ingest.py              
+├── yahoonews_ingest.py         
+├── reddit_ingest.py           
+├── youtube_ingest.py           
+├── fred_ingest.py              
+├── market_ingest.py            
+├── Dockerfile                 
+├── doc.py
+├── requirements.txt            
 └── README.md
 ```
 
