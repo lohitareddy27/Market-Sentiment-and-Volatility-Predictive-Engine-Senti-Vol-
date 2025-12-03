@@ -1,4 +1,4 @@
-# Core
+
 pandas>=2.2.2
 pyarrow>=17.0.0
 requests>=2.32.3
@@ -8,7 +8,7 @@ praw>=7.7.1
 atproto
 feedparser
 
-# GCP / BigQuery / Auth
+
 google-cloud-bigquery>=3.25.0
 google-auth>=2.35.0
 google-auth-oauthlib>=1.2.1
@@ -18,6 +18,6 @@ google-auth-httplib2>=0.1.0
 httplib2>=0.22.0
 pandas-gbq>=0.26.1
 
-# Serving / Functions
 Flask>=3.0.2
 functions-framework>=3.5.0
+
