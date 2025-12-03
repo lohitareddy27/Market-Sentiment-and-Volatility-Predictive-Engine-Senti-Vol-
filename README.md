@@ -29,7 +29,6 @@ senti-vol/
 ├── common.py                   # Shared helpers (BQ loading, env handling)
 ├── news_ingest.py              # NewsAPI ingestion
 ├── yahoonews_ingest.py         # Yahoo Finance RSS ingestion
-├── finnhub_ingest.py           # Finnhub institutional news
 ├── reddit_ingest.py            # Reddit sentiment ingestion
 ├── youtube_ingest.py           # YouTube comments & metadata
 ├── fred_ingest.py              # Macroeconomic indicators (CPI, jobs, interest rates)
@@ -103,7 +102,6 @@ gcloud run jobs create senti-vol-news \
 * senti-vol-reddit
 * senti-vol-youtube
 * senti-vol-yahoonews
-* senti-vol-finnhub
 * senti-vol-fred (daily)
 * senti-vol-market (daily)
 
