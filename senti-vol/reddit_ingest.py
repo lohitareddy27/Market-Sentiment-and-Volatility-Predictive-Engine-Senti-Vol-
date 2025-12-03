@@ -45,7 +45,7 @@ USER_AGENT = get_env("REDDIT_USER_AGENT", default="senti-vol-bot/0.1 (by /u/your
 
 
 CORE_RE = re.compile(
-    r"\b(wti|brent|crude oil|crude|petroleum|opec\+?|eia|nymex|ice(?: brent)?|barrel|refiner(?:y|ies)|upstream|downstream)\b",
+    r"\b(wti|brent|crude oil|crude|petroleum|oil|opec\+?|eia|nymex|ice(?: brent)?|barrel|refiner(?:y|ies)|upstream|downstream)\b",
     re.I
 )
 CTX_RE = re.compile(
@@ -291,3 +291,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
