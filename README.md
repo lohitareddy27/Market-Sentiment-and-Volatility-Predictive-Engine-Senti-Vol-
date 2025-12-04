@@ -16,7 +16,6 @@ An automated data ingestion pipeline that collects financial news, market sentim
 * Google Cloud Run
 * Google Cloud Scheduler
 * BigQuery
-* Secret Manager
 * Artifact Registry
 
 
