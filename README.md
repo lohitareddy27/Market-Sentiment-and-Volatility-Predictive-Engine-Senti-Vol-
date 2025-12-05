@@ -81,7 +81,7 @@ docker build -t us-central1-docker.pkg.dev/`project_id`/senti-repo/senti-vol:lat
 docker push us-central1-docker.pkg.dev/`project_id`/senti-repo/senti-vol:latest 
 ```
 
-## Set Up Cloud Run Jobs and Cloud Scheduler Trigger
+### Set Up Cloud Run Jobs and Cloud Scheduler Trigger
 
 
 ## BigQuery Outputs
