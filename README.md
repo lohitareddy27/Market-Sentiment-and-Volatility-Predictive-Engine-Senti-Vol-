@@ -81,26 +81,8 @@ docker build -t us-central1-docker.pkg.dev/`project_id`/senti-repo/senti-vol:lat
 docker push us-central1-docker.pkg.dev/`project_id`/senti-repo/senti-vol:latest 
 ```
 
-## Cloud Run Jobs Setup
+## Set Up Cloud Run Jobs and Cloud Scheduler Trigger
 
-
-```bash
-gcloud run jobs create senti-vol-job --image us-central1-docker.pkg.dev/absolute-bloom-477511-k3/senti-repo/senti-vol:latest --region us-central1 --service-account absolute-bloom-477511-k3@appspot.gserviceaccount.com --memory 1Gi --task-timeout 900
-```
-
-```bash
-gcloud run jobs execute senti-vol-job --region us-central1
-```
-
-## Cloud Scheduler Triggers
-
-### Example — Run News Every Hour
-
-```bash
-gcloud scheduler jobs create http senti-vol-hourly --schedule="0 * * * *" --uri="https://`location`-run.googleapis.com/apis/run.googleapis.com/v1/namespaces/`project_id`/jobs/senti-vol-job:run" --http-method=POST --oauth-service-account-email=`project_id`@appspot.gserviceaccount.com --location=`location` --time-zone="Asia/Kolkata"
-```
-
----
 
 ## BigQuery Outputs
 
@@ -112,7 +94,7 @@ absolute-bloom-477511-k3.senti_vol_stage
 
 | Table Name         | Description                       |
 | ------------------ | --------------------------------- |
-| `news_articles`    | NewsAPI, Yahoo, Finnhub articles  |
+| `news_articles`    | NewsAPI, Yahoo                    |
 | `reddit_posts`     | Reddit sentiment & discussions    |
 | `youtube_comments` | Comments from financial content   |
 | `macro_indicators` | CPI, unemployment, interest rates |
